@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Makan Yogi Suryani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Ni Komang Yogi Suryani</h1>
+            <h1>230040184</h1>
+            <h1>yogisuriani@gmail.com</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+            <a href="#pesan" class="cta-btn" onclick="openOrderModal()">Pesan Sekarang</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+      <h2>Selamat Datang di Rumah Makan Yogi Suryani</h2>
+      <p>Rasakan kenikmatan sajian autentik kami yang menggugah selera!</p>
+      <a href="#menu" class="cta-btn">Lihat Menu</a>
+  </div>
+</section>
+
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Rumah Makan Yogi Suryani menyajikan hidangan tradisional dengan cita rasa otentik, menggunakan bahan-bahan segar yang berkualitas. Kami berkomitmen untuk memberikan pengalaman bersantap yang hangat dan berkesan bagi setiap pelanggan.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Menu Pilihan Kami</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="udang benar.jpeg" alt="Sate udang">
+                    <h3>Sate udang asam manis</h3>
+                    <p>Sate udang dengan bumbu asam manis khas rumah makan kami.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="gurami.jpeg" alt="Sate Ayam">
+                    <h3>Gurami asam manis</h3>
+                    <p>Gurami dengan bumbu asam manis khas rumah makan kami.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="kerang bakar.jpeg" alt="Rendang Daging">
+                    <h3>Kerang bakar</h3>
+                    <p>Kerang bakar dengan bumbu asam manis khas rumah makan kami.</p>
+                </div>
+                <div class="menu-item">
+                  <img src="cumi goreng.jpeg" alt="Sate udang">
+                  <h3>Cumi goreng tepung</h3>
+                  <p>Cumi goreng tepung dengan bumbu khas rumah makan kami.</p>
+              </div>
+              <div class="menu-item">
+                  <img src="gurami goreng tepung.jpeg" alt="Sate Ayam">
+                  <h3>Gurami goreng tepung</h3>
+                  <p>Gurami goreng tepung dengan bumbu khas rumah makan kami.</p>
+              </div>
+              <div class="menu-item">
+                  <img src="kangkung.jpeg" alt="Rendang Daging">
+                  <h3>Kangkung tumis</h3>
+                  <p>Kangkung tumis dengan bumbu khas rumah makan kami.</p>
+              </div>
+            </div>
+            <a href="#pesan" class="cta-btn" onclick="openOrderModal()">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Order Section as Modal -->
+    <section id="pesan" class="order-modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+            <h2>Pesan Sekarang</h2>
+            <form action="#">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="order-details">Detail Pesanan:</label>
+                <textarea id="order-details" name="order-details" rows="4" required></textarea>
+                
+                <button type="submit" class="cta-btn">Kirim Pesanan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section id="galeri" class="gallery">
+        <div class="container">
+            <h2>Galeri Kami</h2>
+            <div class="gallery-images">
+                <img src="rumahmakan.jpeg" alt="Suasana Rumah Makan">
+                <img src="menu.jpeg" alt="Hidangan Pilihan">
+                <img src="pengunjung yang puas.jpeg" alt="Pengunjung yang Puas">
+                <img src="bale udang .jpeg" alt="Suasana Rumah Makan">
+                <img src="baleudangkeluarga.jpeg" alt="Hidangan Pilihan">
+                <img src="jalan.jpeg" alt="Pengunjung yang Puas">
+                <img src="teman.jpeg" alt="Pengunjung yang Puas">
+                <img src="tamu.jpeg" alt="Suasana Rumah Makan">
+                <img src="menu2.jpeg" alt="Hidangan Pilihan">
+                <img src="kolam.jpeg" alt="Pengunjung yang Puas">
+                <img src="baleudang3.jpeg" alt="Hidangan Pilihan">
+                <img src="baleudangkolam.jpeg" alt="Pengunjung yang Puas">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+<section id="testimoni" class="testimonials">
+  <div class="container">
+      <h2>Apa Kata Pelanggan Kami?</h2>
+      <div class="testimonial-item">
+          <img src="menu2.jpeg" alt="Andi" class="testimonial-img">
+          <p>"Makanan yang enak dan pelayanan yang ramah. Pasti datang lagi!"</p>
+          <p>- Andi</p>
+      </div>
+      <div class="testimonial-item">
+          <img src="menu.jpeg" alt="Budi" class="testimonial-img">
+          <p>"Hidangan tradisional yang autentik dan lezat. Favorit saya!"</p>
+          <p>- Budi</p>
+      </div>
+  </div>
+</section>
+
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Alamat: Jl. Hayam wuruk, Denpasar</p>
+            <p>Telp: 081238539996</p>
+            <p>Email: info@rmlezat.com</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rumah Makan Yogi Suryani | Semua Hak Dilindungi</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to control modal -->
+    <script>
+        function openOrderModal() {
+            document.getElementById('pesan').style.display = 'block';
+        }
+
+        function closeOrderModal() {
+            document.getElementById('pesan').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

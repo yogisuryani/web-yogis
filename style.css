@@ -1,0 +1,241 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cta-btn {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #ca6f1e;
+}
+
+/* Hero Section */
+.hero {
+    background: url('halaman\ depan.webp') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+.about, .menu, .gallery, .testimonials, .contact {
+    text-align: center;
+}
+
+/* Menu Section */
+.menu-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  width: 300px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 120%;
+  height: 300px; /* Tinggi tetap agar gambar seragam */
+  border-radius: 10px;
+  object-fit: cover; /* Memotong gambar agar sesuai ukuran */
+}
+
+
+
+/* Mengatur ukuran gambar di bagian galeri */
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px; /* Jarak antar gambar */
+}
+
+.gallery-images img {
+    width: 100%; /* Mengisi lebar kolom */
+    height: 200px; /* Tinggi tetap agar seragam */
+    object-fit: cover; /* Memotong gambar agar sesuai ukuran */
+}
+
+/* Pengaturan umum untuk gambar */
+img {
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-links a:hover {
+    color: #e67e22;
+}
+
+/* Modal Styles */
+.order-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.close-btn {
+    color: #333;
+    font-size: 24px;
+    float: right;
+    cursor: pointer;
+}
+/* Animasi Fade-In untuk Testimonial */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.testimonials .testimonial-item {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.testimonials .testimonial-item:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.testimonials .testimonial-item:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+/* Gaya Gambar Testimonial */
+.testimonial-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+/* Background hitam dan styling untuk Testimoni Section */
+.testimonials {
+  background-color: rgba(0, 0, 0, 0.877);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.testimonials h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-item {
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 600px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.687);
+  transition: transform 0.3s;
+}
+
+.testimonial-item:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
